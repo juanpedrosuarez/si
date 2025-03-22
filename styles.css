@@ -1,0 +1,239 @@
+/* Estilo básico do Header */
+header {
+  background-color: #041446; /* Cor de fundo */
+  color: yellow; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+  display: flex; /* Usar flexbox para o layout */
+  justify-content: space-between; /* Espaço entre logo e nav */
+  align-items: center; /* Alinhar itens verticalmente */
+}
+
+header .logo {
+  margin-left: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+.titulo {
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .a{
+  text-align: center;
+
+ }
+.produtos {
+  padding: 20px;
+}
+
+.cadastro-cliente{
+  text-align: center;
+
+}
+h2, h3, h4, h5 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 30px;
+  color: #333;;
+}
+
+.categoria {
+  list-style: none;
+  padding: 0;
+}
+
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.produto img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-right: 20px;
+}
+
+.produto p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.produto h5 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produto {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .produto img {
+      max-width: 100%;
+      margin-bottom: 10px;
+  }
+
+  h2, h3, h4, h5 {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  h2, h3, h4, h5 {
+      font-size: 1.2em;
+  }
+
+  .produto p {
+      font-size: 0.9em;
+  }
+}
+
+footer {
+  background-color: #041446; /* Cor de fundo */
+  color: yellow; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+  display: flex; /* Usar flexbox para o layout */
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Alinhar itens verticalmente */
+  margin-top: 30px; /* Espaçamento superior */
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+footer .footer-content > div {
+  flex: 1; /* Cada coluna ocupará o mesmo espaço */
+  padding: 10px;
+}
+
+footer .footer-content h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-content ul li {
+  margin-bottom: 5px;
+}
+
+footer .footer-content ul li a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+footer .footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  footer .footer-content {
+      flex-direction: column;
+  }
+
+  footer .footer-content > div {
+      flex: none;
+      width: 100%;
+      padding: 10px 0;
+  }
+}
+
+.servico {
+  text-align: center;
+
+}
+.servico-titulo {
+  text-align:left;
+  margin-left:  50px;
+}
+
+/* Aumentar o contraste nas áreas interativas */
+header, footer, .formulario-cadastro, .servico-agendamento {
+  background-color: #041446; /* Azul escuro para maior contraste */
+  color: white;
+}
+
+header a:hover, footer a:hover {
+  background-color: #041446; /* Aumentar contraste do hover */
+}
+
+/* Estilo para botões de envio */
+input[type="submit"], button[type="submit"] {
+  background-color: yellow; /* Cor de destaque para botões */
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adiciona um espaço abaixo dos botões */
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Espaço entre o footer e as sections */
+footer {
+  margin-top: 40px; /* Adiciona margem superior ao footer para criar espaço */
+}
+
+/* Espaço entre as sections e seus conteúdos */
+.formulario-cadastro, .servico-agendamento {
+  margin-bottom: 40px; /* Adiciona margem inferior para as sections */
+}
+

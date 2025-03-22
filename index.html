@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadinho do Juan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-    <div>
-<img src="/img/logo.jpg" alt="logo" width="150">
+    <div class="logo">
+        <img src="/img/logo.jpg" alt="Logo do Mercadinho do Juan" width="100">
     </div>
 
     <nav>
@@ -19,97 +22,189 @@
         </ul>
     </nav>
     <div> 
-        <p> Email: Mercadinhodojuan@gmail.com</p>
-        <p> Telefone: 4002-8922</p>
-    </div>
-
-</header>
-
-
-<body>
-
-<h1>Mercadinho do Juan</h1>
-<h2>Produtos</h2>
-<h3>Categorias</h3>
-<h4>Categoria: Alimentos</h4>
-<div>
-    <h5>Arroz</h5>
-    <img src="/img/arroz.jpg"  width="200" height="200" alt="Arroz">
-    <p>Descrição: Arroz branco, 1kg.</p>
-    <p>Valor: R$ 5,00</p>
-</div>
-<div>
-    <h5>Feijão</h5>
-    <img src="/img/feijao.jpg" width="200" height="200" alt="Feijão">
-    <p>Descrição: Feijão preto, 1kg.</p>
-    <p>Valor: R$ 6,50</p>
-</div>
-
-<!-- Categoria 2: Bebidas -->
-<h4>Categoria: Bebidas</h4>
-<div>
-    <h5>Suco de Laranja</h5>
-    <img src="/img/suco_de_laranja.jpg" width="200" height="200" alt="Suco de Laranja">
-    <p>Descrição: Suco de laranja natural, 1 litro.</p>
-    <p>Valor: R$ 3,50</p>
-</div>
-<div>
-    <h5>Refrigerante</h5>
-    <img src="/img/coca.png" width="200" height="200" alt="Refrigerante">
-    <p>Descrição: Refrigerante de cola, 2 litros.</p>
-    <p>Valor: R$ 7,00</p>
-</div>
-
-<!-- Categoria 3: Higiene Pessoal -->
-<h4>Categoria: Higiene Pessoal</h4>
-<div>
-    <h5>Sabonete</h5>
-    <img src="/img/sabonete.webp"  width="200" height="200" alt="Sabonete">
-    <p>Descrição: Sabonete glicerinado, 90g.</p>
-    <p>Valor: R$ 2,00</p>
-</div>
-<div>
-    <h5>Pasta de Dente</h5>
-    <img src="/img/pasta.webp" width="200" height="200" alt="Pasta de Dente">
-    <p>Descrição: Pasta de dente, 90g.</p>
-    <p>Valor: R$ 4,00</p>
-</div>
-
-<h2>Serviços</h2>
-<div>
-    <h5>Serviço 1: Entrega em domicílio</h5>
-    <p>Descrição: Entrega de produtos em até 24 horas.</p>
-    <p>Valor: R$ 10,00</p>
-</div>
-<div>
-    <h5>Serviço 2: Compra via WhatsApp</h5>
-    <p>Descrição: Faça suas compras pelo WhatsApp, com entrega no mesmo dia.</p>
-    <p>Valor: R$ 5,00</p>
-</div>
-
-
-</body>
-<footer>
-
-
-</footer>
-    <div> 
-        <p>&copy; Mercadinho do Juan - Todos os direitos reservados.</p>
-    </div>
-    <div>
-        <h4>Contato:</h4>
         <p>Email: Mercadinhodojuan@gmail.com</p>
         <p>Telefone: 4002-8922</p>
     </div>
+</header>
 
-    <div>
-        <h4>Paginas:</h4>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobrenos.html">Sobre nós</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>  
-        </ul>
+<body>
+
+<h1 class="titulo">Mercadinho do Juan</h1>
+
+<!-- Carrossel de Imagens -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/img/bck_1.jpg" class="d-block w-100" alt="Imagem do interior da loja com prateleiras cheias de produtos">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/bck_2.jpg" class="d-block w-100" alt="Imagem de uma seção de alimentos frescos no mercado">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="/img/bck_3.jpg" class="d-block w-100" alt="Imagem da fachada do Mercadinho do Juan com a entrada principal">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" aria-label="Slide anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" aria-label="Próximo slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+<section class="produtos">
+    <h4>Categoria: Alimentos</h4>
+    <ul class="categoria">
+        <li class="produto">
+            <h5>Arroz</h5>
+            <img src="/img/arroz.jpg" width="200" height="200" alt="Arroz branco, embalagem de 1kg">
+            <p>Descrição: Arroz branco, 1kg.</p>
+            <p>Valor: R$ 5,00</p>
+        </li>
+        <li class="produto">
+            <h5>Feijão</h5>
+            <img src="/img/feijao.jpg" width="200" height="200" alt="Feijão preto, embalagem de 1kg">
+            <p>Descrição: Feijão preto, 1kg.</p>
+            <p>Valor: R$ 6,50</p>
+        </li>
+    </ul>
+
+    <!-- Categoria: Bebidas -->
+    <h4>Categoria: Bebidas</h4>
+    <ul class="categoria">
+        <li class="produto">
+            <h5>Suco de Laranja</h5>
+            <img src="/img/suco_de_laranja.jpg" width="200" height="200" alt="Suco de laranja natural, embalagem de 1 litro">
+            <p>Descrição: Suco de laranja natural, 1 litro.</p>
+            <p>Valor: R$ 3,50</p>
+        </li>
+        <li class="produto">
+            <h5>Refrigerante</h5>
+            <img src="/img/coca.png" width="200" height="200" alt="Refrigerante de cola, embalagem de 2 litros">
+            <p>Descrição: Refrigerante de cola, 2 litros.</p>
+            <p>Valor: R$ 7,00</p>
+        </li>
+    </ul>
+
+    <!-- Categoria: Higiene Pessoal -->
+    <h4>Categoria: Higiene Pessoal</h4>
+    <ul class="categoria">
+        <li class="produto">
+            <h5>Sabonete</h5>
+            <img src="/img/sabonete.webp" width="200" height="200" alt="Sabonete glicerinado, embalagem de 90g">
+            <p>Descrição: Sabonete glicerinado, 90g.</p>
+            <p>Valor: R$ 2,00</p>
+        </li>
+        <li class="produto">
+            <h5>Pasta de Dente</h5>
+            <img src="/img/pasta.webp" width="200" height="200" alt="Pasta de dente, embalagem de 90g">
+            <p>Descrição: Pasta de dente, 90g.</p>
+            <p>Valor: R$ 4,00</p>
+        </li>
+    </ul>
+</section>
+
+<h2 class="servico-titulo">Serviços:</h2>
+<div>
+    <h5 class="servico">Serviço 1: Retirada no local</h5>
+    <p class="servico">Descrição: Entrega de produtos em até 24 horas.</p>
+    <p class="servico">Valor: R$ 0,00</p>
+</div>
+<div>
+    <h5 class="servico">Serviço 2: Tele-Entrega</h5>
+    <p class="servico">Descrição: Faça suas compras pelo WhatsApp, com entrega no mesmo dia.</p>
+    <p class="servico">Valor: R$ 10,00</p>
+</div>
+
+<section class="formulario-cadastro">
+    <h2 class="cadastro-cliente">Cadastro de Cliente</h2>
+    <form action="processar_cadastro.php" method="POST">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required aria-describedby="nomeHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço" required aria-describedby="enderecoHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF" required aria-describedby="cpfHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="sexo" class="form-label">Sexo</label><br>
+            <input type="radio" id="masculino" name="sexo" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required aria-describedby="telefoneHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="newsletter" class="form-label">Gostaria de receber nossa newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="sim" aria-label="Marque para receber a newsletter">
+            <label for="newsletter">Sim, gostaria</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</section>
+
+<section class="servico-agendamento">
+    <h2 class="cadastro-cliente">Escolha do Serviço e Agendamento</h2>
+
+    <!-- Escolha do serviço -->
+    <div class="mb-3">
+        <label for="servico" class="form-label">Escolha o Serviço</label>
+        <select class="form-select" id="servico" name="servico" aria-label="Escolha o serviço desejado">
+            <option value="retirada">Retirada no Local</option>
+            <option value="entrega">Tele-Entrega</option>
+        </select>
     </div>
 
+    <!-- Agendamento -->
+    <div class="mb-3">
+        <label for="data_agendamento" class="form-label">Data e Hora do Agendamento</label>
+        <input type="datetime-local" class="form-control" id="data_agendamento" name="data_agendamento" required aria-describedby="dataAgendamentoHelp">
+    </div>
+
+    <button type="submit" class="btn btn-success">Agendar Serviço</button>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; Mercadinho do Juan - Todos os direitos reservados.</p>
+        <div class="footer-contato">
+            <h4>Contato:</h4>
+            <p>Email: Mercadinhodojuan@gmail.com</p>
+            <p>Telefone: 4002-8922</p>
+        </div>
+        <div class="footer-pages">
+            <h4>Páginas:</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
